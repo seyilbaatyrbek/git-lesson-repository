@@ -1,0 +1,36 @@
+Redirection
+
+Echo a string to a file
+- echo "redirection string" > redirection.txt
+
+Cat a file content and redirect the content to a new file
+- cat redirection.txt > redirection2.txt
+
+Cat the content of the new file
+- cat redirection2.txt
+
+Cat the content again and pipe to wc
+- cat redirection2.txt | wc
+
+Count the words in index.html
+- wc index.html
+
+Sort a file
+- sort index.html
+
+Sort a file and redirect the output to another file
+- sort index.html > index-sorted.html
+
+Remove the duplicated lines from tasks.txt
+- sort tasks.txt | uniq -u
+
+Print all lines of tasks.txt that contains the word basic
+- cat tasks.txt | grep basic
+
+Print all lines of tasks.txt that does not contain the word basic
+- cat tasks.txt | grep -v basic
+
+Commit your changes and push (check it on GitHub if you like)
+- git add *
+- git commit -m "Redirection Solution"
+- git push
